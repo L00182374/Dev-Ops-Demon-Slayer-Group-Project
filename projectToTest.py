@@ -1,0 +1,8 @@
+#projectToTest
+
+def lessThan(a,b):
+    if a < b:
+        return True
+    else:
+        return False
+    
