@@ -1,6 +1,8 @@
 import unittest# for unit testing
 from projectToTest import lessThan# import the function to be tested
 from projectToTest import greaterThan# import the second function to be tested
+from projectToTest import equalTo# import the third function to be tested
+from projectToTest import notEqualTo# import the fourth function to be tested
 
 class TestProjectToTest(unittest.TestCase):# create a test case class
 
@@ -15,6 +17,16 @@ class TestProjectToTest(unittest.TestCase):# create a test case class
         self.assertFalse(greaterThan(1, 2))  # Should return False because 1 is not greater than 2
         self.assertFalse(greaterThan(1, 1))  # Should return False because 1 is not greater than 1
         #self.assertFalse(greaterThan('a',5)) # creates an error because 'a' and 5 are of different types
+
+    def test_equalTo(self):# define another test method
+        self.assertTrue(equalTo(2, 2))  # Should return True because 2 == 2
+        self.assertFalse(equalTo(1, 2))  # Should return False because 1 != 2
+        self.assertFalse(equalTo(2, 1))  # Should return False because 2 != 1
+
+    def test_notEqualTo(self):# define another test method
+        self.assertTrue(notEqualTo(1, 2))  # Should return True because 1 != 2
+        self.assertFalse(notEqualTo(2, 2))  # Should return False because 2 == 2
+        self.assertTrue(notEqualTo(2, 1))  # Should return True because 2 != 1
 
 if __name__ == '__main__':# run the unit tests
     unittest.main()
