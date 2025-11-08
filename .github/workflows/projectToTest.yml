@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   build:
-
+    if: github.ref_name == 'main'
     runs-on: ubuntu-latest
 
     steps:
@@ -37,3 +37,10 @@ jobs:
     - name: Test with unittest
       run: |
         python tests.py
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy Step
+      run: echo "Deploying application..."
