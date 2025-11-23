@@ -3,11 +3,8 @@ import pydoc# for automatic documentation generation
 import logging# for logging
 
 logging.basicConfig(filename='projectToTest.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-
 logger = logging.getLogger(__name__)# Create a logger for this module
 logger.info('Module projectToTest loaded')# Log that the module has been loaded
-
-
 
 def lessThan(a,b):# Function to check if a is less than b
     '''
