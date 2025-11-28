@@ -39,6 +39,17 @@ class TestProjectToTest(unittest.TestCase):# create a test case class
         self.assertTrue(notEqualTo(2, 1))  # Should return True because 2 != 1
         logger.info('Completed tests for notEqualTo function')# Log completion of this test
 
+    def test_invalidInputs(self):# define a test method for invalid inputs
+        with self.assertRaises(TypeError):
+            lessThan('a', 5)
+        with self.assertRaises(TypeError):
+            greaterThan('a', 5)
+        with self.assertRaises(TypeError):
+            equalTo('a', 5)
+        with self.assertRaises(TypeError):
+            notEqualTo('a', 5)
+        logger.info('Completed tests for invalid inputs')# Log completion of this test
+
 if __name__ == '__main__':# run the unit tests
     logger.info('Running all tests')# Log that tests are being run
     unittest.main()
