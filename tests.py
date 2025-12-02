@@ -5,7 +5,7 @@ from projectToTest import greaterThan# import the second function to be tested
 from projectToTest import equalTo# import the third function to be tested
 from projectToTest import notEqualTo# import the fourth function to be tested
 
-logging.basicConfig(filename='tests.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+#logging.basicConfig(filename='tests.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)# Create a logger for this test module
 logger.info('Test module loaded')# Log that the test module has been loaded
 
@@ -49,12 +49,6 @@ class TestProjectToTest(unittest.TestCase):# create a test case class
         with self.assertRaises(TypeError):
             notEqualTo('a', 5)
         logger.info('Completed tests for invalid inputs')# Log completion of this test
-
-    def test_suite(self):# define a test method for the test suite
-        suite = unittest.TestLoader().loadTestsFromTestCase(TestProjectToTest)
-        runner = unittest.TextTestRunner()
-        result = runner.run(suite)
-        logger.info('Test suite executed with %d failures and %d errors', len(result.failures), len(result.errors))# Log the results of the test suite
 
 if __name__ == '__main__':# run the unit tests
     logger.info('Running all tests')# Log that tests are being run
