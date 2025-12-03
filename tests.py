@@ -50,12 +50,6 @@ class TestProjectToTest(unittest.TestCase):# create a test case class
             notEqualTo('a', 5)
         logger.info('Completed tests for invalid inputs')# Log completion of this test
 
-    def test_suite(self):# define a test method for the test suite
-        suite = unittest.TestLoader().loadTestsFromTestCase(TestProjectToTest)
-        runner = unittest.TextTestRunner()
-        result = runner.run(suite)
-        logger.info('Test suite executed with %d failures and %d errors', len(result.failures), len(result.errors))# Log the results of the test suite
-
 if __name__ == '__main__':# run the unit tests
     logger.info('Running all tests')# Log that tests are being run
     unittest.main()
