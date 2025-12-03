@@ -9,6 +9,10 @@
 | 3.2.x   | :white_check_mark: | Current stable. Critical & high vulnerabilities will be patched in 3.3.x     |
 | < 3.0   | :x:                | Unsupported.                                                                 |
 
+**Upgrade recommendation:** Users should run the latest patch release in order to avoid issues (e.g. 3.2.(latest)). If you cannot upgrade, contact us in your report and include your impact statement so we can advise a course of action.
+
+---
+
 ## Reporting a Vulnerability
 If you discover a security vulnerability, please follow these steps:
 1. **Do not open a public issue**: Instead, report the issue directly to us via email at:
