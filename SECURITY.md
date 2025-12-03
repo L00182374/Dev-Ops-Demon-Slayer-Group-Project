@@ -31,6 +31,9 @@ We follow a responsible disclosure process:
 ---
 
 # Security Best Practices
+
+We enable GitHub Dependabot and secret scanning
+
 We recommend all contributors and users to follow these best practices:
 Use the latest version of the project.
 - Regularly update dependencies.
