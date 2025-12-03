@@ -2,5 +2,4 @@ pytest
 pytest-cov
 coverage
 logging
-unittest
 pydoc
