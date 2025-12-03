@@ -2,12 +2,12 @@
 
 ## Supported Versions
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 3.0.x   | :x:                |
-| 3.1.x   | :white_check_mark: |
-| 3.2.x   | :white_check_mark: |
-| < 3.1   | :x:                |
+| Version | Supported          |                                                                              |
+| ------- | ------------------ |                                                                              |
+| 3.0.x   | :x:                | End of life. no security patches will be produced. Upgrade to 3.1.x or 3.2.x |
+| 3.1.x   | :white_check_mark: | Security fixes will be backported for critical/high issues where feasible.   |
+| 3.2.x   | :white_check_mark: | Current stable. Critical & high vulnerabilities will be patched in 3.3.x     |
+| < 3.0   | :x:                | Unsupported.                                                                 |
 
 ## Reporting a Vulnerability
 If you discover a security vulnerability, please follow these steps:
