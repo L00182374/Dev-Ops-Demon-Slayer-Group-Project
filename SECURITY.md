@@ -1,9 +1,9 @@
 # Security Policy
 
-## Supported Versions
+## Supported Versions & End of Life
 
-| Version | Supported          |                                                                              |
-| ------- | ------------------ |                                                                              |
+| Version | Supported          | End of Life / Notes                                                          |
+| ------- | ------------------ | ---------------------------------------------------------------------------- |
 | 3.0.x   | :x:                | End of life. no security patches will be produced. Upgrade to 3.1.x or 3.2.x |
 | 3.1.x   | :white_check_mark: | Security fixes will be backported for critical/high issues where feasible.   |
 | 3.2.x   | :white_check_mark: | Current stable. Critical & high vulnerabilities will be patched in 3.3.x     |
