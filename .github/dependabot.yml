@@ -1,11 +1,37 @@
 version: 2
 updates:
+  # Python dependencies (pip / requirements.txt)
   - package-ecosystem: "pip"
-    directory: "/" # Location of package manifests
+    directory: "/"                          # path containing requirements.txt
     schedule:
-      interval: "weekly"
-      time: "18:00"
-    groups:        # Groups all Python packages into a single group to reduce PR amount
-      python-packages:
-        patterns:
-          - "*"
+      interval: "weekly"                        # weekly updates
+      time: "18:00"                              # UTC time for update checks
+      day: "wednesday"                         # day of the week for weekly updates
+    open-pull-requests-limit: 6                      # 6 to avoid CI/PR flood
+    versioning-strategy: "increase"                  # conservative approach prefers bumping versions 
+    labels:                                   # labels to add to PRs
+      - "dependencies"                        # general label for dependency updates
+      - "dependabot"                       # label indicating Dependabot origin             
+    assignees:                        # assign PRs to specific users or teams
+      - "L00182374"                      # the user ID of the assignee         
+    commit-message:                       # customise commit messages
+      prefix: "chore(deps)"                  # prefix for commit messages
+      include: "scope"                  # include scope in commit messages
+
+    groups:                                 # grouping strategy for updates
+      python-patches:                   # custom group name
+        patterns:                       
+          - "*.py"                     # include all Python files
+        update-types:                   # types of updates to include in this group
+          - patch  
+
+  # GitHub Actions workflow updates 
+  - package-ecosystem: "github-actions"  
+    directory: "/"
+    schedule:
+      interval: "weekly"            # weekly updates
+      day: "monday"                 # day of the week for weekly updates
+    open-pull-requests-limit: 3               # limit to 3 open PRs
+    labels:                         # labels to add to PRs
+      - "ci"                   # label indicating CI related updates
+      - "dependabot"        # label indicating Dependabot origin
