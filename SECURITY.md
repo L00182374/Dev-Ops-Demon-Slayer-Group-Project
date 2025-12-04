@@ -15,8 +15,18 @@
 
 ## Reporting a Vulnerability
 If you discover a security vulnerability, please follow these steps:
-1. **Do not open a public issue**: Instead, report the issue directly to us via email at:
-- L00182374@atu.ie
+1. **Do not open a public issue or public PR**: for a vulnerability. Public disclosure may put users at risk. - Instead, report the issue directly to us via our preferred reporting channels:
+
+  Preferred reporting channels (in order):
+  - **Email (encrypted preferred):** L00182374@atu.ie  
+     - If you can encrypt with our PGP key, please do. See the PGP key block below.
+     
+  - **GitHub Security Advisories (private):** Use the repository's _Security_ → _Advisories_ → _New private report_ if available.
+  
+  - If both fail, send an email to L00182374@atu.ie unencrypted and mark it PRIVATE.
+
+**PGP key**  
+Use this PGP key to encrypt sensitive report details: 4CC1 D2FF 9237 29AF 22FC 6C29 6C64 F226 CA79 5B97
 
 2. **Provide detailed information**: Include as much detail as possible to help us reproduce and resolve the issue, such as:
 - Affected version(s)
