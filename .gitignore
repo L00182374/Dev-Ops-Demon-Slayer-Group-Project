@@ -14,3 +14,38 @@ export_credentials.cfg
 .mono/
 data_*/
 mono_crash.*.json
+
+# Python / backend
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+pip-delete-this-directory.txt
+/*.egg-info
+dist/
+
+# IDE / editor
+.vscode/
+.idea/
+
+# local env files and secrets
+.env
+.env.*.local
+.env.local
+
+# Native certs / keys
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.pem
+
+# dependencies
+/.godot/packages/
+/.godot/libraries/
+/.godot/modules/
+/python_modules/
