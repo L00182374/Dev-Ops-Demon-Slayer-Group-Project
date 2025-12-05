@@ -10,7 +10,7 @@ This title provides stellar graphical fidelity as well as precise gameplay so we
 ---
 
 # Code of Conduct
-  [Code of Conduct](CODE-OF-CONDUCT.md)
+  [Code of Conduct](CODE_OF_CONDUCT.md)
 
 ---
 
@@ -21,3 +21,8 @@ This title provides stellar graphical fidelity as well as precise gameplay so we
 
 # Repo Analytics
   [Mermaid Chart](Analytics/repoMetrics.md)
+
+---
+
+# Game Assets
+  [Inosuke Model](Assets/Demon_Slayer_-_Inosuke_Figurine.stl)
