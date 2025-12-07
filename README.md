@@ -26,4 +26,5 @@ This title provides stellar graphical fidelity as well as precise gameplay so we
 
 # Game Assets
   [Inosuke Model](Assets/Demon_Slayer_-_Inosuke_Figurine.stl)
-  [Tanjiro Model](Assets/x)
+  
+  [Tanjiro Sword Model](Assets/full_sword.stl)
