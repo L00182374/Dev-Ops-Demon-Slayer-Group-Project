@@ -19,6 +19,11 @@ This title provides stellar graphical fidelity as well as precise gameplay so we
 
 ---
 
+# Our Headquarters
+  [Headquarters](Analytics/Headquarters.json)
+
+---
+
 # Repo Analytics
   [Mermaid Chart](Analytics/repoMetrics.md)
 
