@@ -2,4 +2,5 @@ pytest
 pytest-cov
 coverage
 logging
+flake8
 
