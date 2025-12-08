@@ -11,6 +11,7 @@ logger.info('Test module loaded')  # Log that the test module has been loaded
 
 class TestProjectToTest(unittest.TestCase):  # create a test case class
 
+
     logger.info('Starting tests for projectToTest functions')  # Log the start of tests
 
     def test_lessThan(self):  # define a test method
