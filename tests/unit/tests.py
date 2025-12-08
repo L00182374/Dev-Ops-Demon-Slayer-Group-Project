@@ -1,9 +1,9 @@
 import unittest# for unit testing
 import logging# for logging
-from projectToTest import lessThan# import the function to be tested
-from projectToTest import greaterThan# import the second function to be tested
-from projectToTest import equalTo# import the third function to be tested
-from projectToTest import notEqualTo# import the fourth function to be tested
+from src.projectToTest import lessThan# import the function to be tested
+from src.projectToTest import greaterThan# import the second function to be tested
+from src.projectToTest import equalTo# import the third function to be tested
+from src.projectToTest import notEqualTo# import the fourth function to be tested
 
 #logging.basicConfig(filename='tests.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)# Create a logger for this test module
