@@ -45,4 +45,3 @@ def test_invalid_inputs_raise_typeerror(func):  # define a test method for inval
     with pytest.raises(TypeError):  # expect TypeError for invalid inputs
         func('a', 5)  # Call the function with invalid inputs
    # logger.info("Function %s raised TypeError for invalid inputs", func.__name__)# Log the exception occurrence
-    
