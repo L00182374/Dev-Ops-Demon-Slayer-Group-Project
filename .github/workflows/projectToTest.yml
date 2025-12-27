@@ -1,4 +1,4 @@
-# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# This workflow will install Python dependencies, run tests and linting on each push or pull request to the main branch.
 
 name: projectToTest
 
@@ -15,6 +15,9 @@ jobs:
   build:
     if: github.ref_name == 'main'
     runs-on: ubuntu-latest
+
+    env:
+      PYTHONPATH: ${{ github.workspace }} # Add repo root to PYTHONPATH so tests can find the projectToTest file.
 
     steps:
     - uses: actions/checkout@v4
