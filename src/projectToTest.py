@@ -37,7 +37,9 @@ def greaterThan(a, b):  # Function to check if a is greater than b
     Raises TypeError if inputs are of different types than integers
     """
 
-    if not (isinstance(a, (int, float)) and isinstance(b, (int, float))):  # Check for numeric types
+    if not (
+        isinstance(a, (int, float)) and isinstance(b, (int, float))
+    ):  # Check for numeric types
         raise TypeError(
             "greaterThan expects numeric inputs"
         )  # Raise TypeError for invalid types
@@ -57,7 +59,9 @@ def equalTo(a, b):  # Function to check if a is equal to b
     Raises TypeError if inputs are of different types than integers
     """
 
-    if not (isinstance(a, (int, float)) and isinstance(b, (int, float))):  # Check for numeric types
+    if not (
+        isinstance(a, (int, float)) and isinstance(b, (int, float))
+    ):  # Check for numeric types
         raise TypeError(
             "equalTo expects numeric inputs"
         )  # Raise TypeError for invalid types
@@ -77,7 +81,9 @@ def notEqualTo(a, b):  # Function to check if a is not equal to b
     Raises TypeError if inputs are of different types than integers
     """
 
-    if not (isinstance(a, (int, float)) and isinstance(b, (int, float))):  # Check for numeric types
+    if not (
+        isinstance(a, (int, float)) and isinstance(b, (int, float))
+    ):  # Check for numeric types
         raise TypeError(
             "notEqualTo expects numeric inputs"
         )  # Raise TypeError for invalid types
