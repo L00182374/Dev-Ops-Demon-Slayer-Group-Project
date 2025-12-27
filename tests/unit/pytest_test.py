@@ -1,7 +1,7 @@
 import pytest  # Using pytest for testing
 
 # import logging# for logging
-from projectToTest.projectToTest import (
+from projectToTest import (
     lessThan,
     greaterThan,
     equalTo,
