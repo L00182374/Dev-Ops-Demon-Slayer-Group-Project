@@ -13,7 +13,6 @@ permissions:
 
 jobs:
   build:
-    if: github.ref_name == 'main'
     runs-on: ubuntu-latest
 
     env:
@@ -96,6 +95,8 @@ jobs:
 
   deploy:
     needs: integration
+    # Only run deploy job on pushes to main branch not on pull requests
+    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     steps:
     - name: Deploy Step
