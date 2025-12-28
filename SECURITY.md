@@ -21,7 +21,7 @@ If you discover a security vulnerability, please follow these steps:
   - **Email (encrypted preferred):** L00182374@atu.ie  
      - If you can encrypt with our PGP key, please do. See the PGP key block below.
      
-  - **GitHub Security Advisories (private):** Use the repository's _Security_ → _Advisories_ → _New private report_ if available.
+  - **GitHub Security Advisories (private):** Use the repository's _Security_ -> _Advisories_ -> _New private report_ if available.
   
   - If both fail, send an email to L00182374@atu.ie unencrypted and mark it PRIVATE.
 
@@ -31,7 +31,7 @@ Use this PGP key to encrypt sensitive report details: 4CC1 D2FF 9237 29AF 22FC 6
 2. **Provide detailed information**: Include as much detail as possible to help us reproduce and resolve the issue, such as:
 - Affected version(s)
 - Steps to reproduce the vulnerability
--Any relevant code snippets or logs
+- Any relevant code snippets or logs
 
 3. **Expected Response Time**: We aim to respond to all security reports within **2 business days** and provide a resolution or mitigation plan within **5 business days**.
 
