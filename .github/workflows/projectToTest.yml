@@ -19,7 +19,7 @@ jobs:
       PYTHONPATH: ${{ github.workspace }}/src # Add the correct path to PYTHONPATH so tests can find the projectToTest file.
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
       with:
